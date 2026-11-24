@@ -67,6 +67,8 @@ h1, h2, h3, h4 { font-family: Manrope, 'DM Sans', Arial, sans-serif; }
 .organizers strong, .organizers span { display: block; }
 .organizers strong { margin-bottom: 5px; }
 .organizers span { color: #607886; font-size: .9rem; line-height: 1.5; }
+.person-link { color: #176e79; text-decoration: underline; text-decoration-color: #a2cfd0; text-underline-offset: 3px; }
+.person-link:hover { color: #104c58; text-decoration-color: currentColor; }
 
 .program { background: #eef5f6; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 38px; }
