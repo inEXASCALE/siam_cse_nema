@@ -63,7 +63,7 @@ h1, h2, h3, h4 { font-family: Manrope, 'DM Sans', Arial, sans-serif; }
 .abstract-copy { max-width: 75ch; }
 .abstract-copy p { margin: 0 0 26px; color: #4b6271; font-size: 1.03rem; line-height: 1.82; }
 .abstract-copy p:last-child { margin-bottom: 0; }
-.organizers { display: grid; grid-template-columns: 245px 1fr 1fr; gap: 24px 68px; align-items: start; margin-bottom: 68px; padding-bottom: 34px; border-bottom: 1px solid #e1e9ed; }
+.organizers { display: grid; grid-template-columns: 245px 1fr 1fr; gap: 24px 68px; align-items: start; margin-top: 68px; padding-top: 34px; border-top: 1px solid #e1e9ed; }
 .organizers .section-label { margin: 5px 0 0; }
 .organizers strong, .organizers span { display: block; }
 .organizers strong { margin-bottom: 5px; }
@@ -122,7 +122,7 @@ h1, h2, h3, h4 { font-family: Manrope, 'DM Sans', Arial, sans-serif; }
   .abstract-layout { grid-template-columns: 1fr; gap: 25px; }
   .intro-heading { position: static; }
   .abstract-copy p { margin-bottom: 22px; }
-  .organizers { grid-template-columns: 1fr; gap: 16px; margin-bottom: 48px; padding-bottom: 30px; }
+  .organizers { grid-template-columns: 1fr; gap: 16px; margin-top: 48px; padding-top: 30px; }
   .organizers .section-label { margin: 0 0 4px; }
   .section-heading { display: block; }
   .section-heading > p { margin-top: 18px; }
