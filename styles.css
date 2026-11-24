@@ -56,13 +56,15 @@ h1, h2, h3, h4 { font-family: Manrope, 'DM Sans', Arial, sans-serif; }
 
 .section { padding-block: 90px; }
 .intro { background: #fff; }
-.intro-heading { margin-bottom: 34px; }
+.abstract-layout { display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 68px; align-items: start; }
+.intro-heading { position: sticky; top: 28px; }
 .section-label { color: #147ba7; margin-bottom: 18px; }
 .intro h2, .section-heading h2 { margin-bottom: 0; font-size: clamp(2rem, 3vw, 3.2rem); line-height: 1.2; letter-spacing: -.045em; }
-.abstract-copy { display: grid; grid-template-columns: 1.15fr .85fr; gap: 54px; align-items: start; }
-.abstract-copy p { max-width: 66ch; margin: 0; color: #4b6271; font-size: 1.01rem; line-height: 1.8; }
-.organizers { display: grid; grid-template-columns: 1fr 1fr; gap: 15px 27px; margin-top: 42px; padding-top: 27px; border-top: 1px solid #e1e9ed; }
-.organizers .section-label { grid-column: 1 / -1; margin-bottom: 0; }
+.abstract-copy { max-width: 75ch; }
+.abstract-copy p { margin: 0 0 26px; color: #4b6271; font-size: 1.03rem; line-height: 1.82; }
+.abstract-copy p:last-child { margin-bottom: 0; }
+.organizers { display: grid; grid-template-columns: 245px 1fr 1fr; gap: 24px 68px; align-items: start; margin-bottom: 68px; padding-bottom: 34px; border-bottom: 1px solid #e1e9ed; }
+.organizers .section-label { margin: 5px 0 0; }
 .organizers strong, .organizers span { display: block; }
 .organizers strong { margin-bottom: 5px; }
 .organizers span { color: #667e8c; font-size: .9rem; line-height: 1.5; }
@@ -103,7 +105,8 @@ h1, h2, h3, h4 { font-family: Manrope, 'DM Sans', Arial, sans-serif; }
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; gap: 42px; min-height: 0; }
   .event-card { max-width: 480px; }
-  .abstract-copy { gap: 34px; }
+  .abstract-layout { grid-template-columns: 190px minmax(0, 1fr); gap: 35px; }
+  .organizers { grid-template-columns: 190px 1fr 1fr; gap: 24px 35px; }
   .hero h1 { font-size: clamp(2.6rem, 7vw, 4rem); }
 }
 @media (max-width: 640px) {
@@ -116,8 +119,11 @@ h1, h2, h3, h4 { font-family: Manrope, 'DM Sans', Arial, sans-serif; }
   .hero-lede { font-size: 1.02rem; }
   .event-card { width: 100%; }
   .section { padding-block: 64px; }
-  .abstract-copy { grid-template-columns: 1fr; gap: 23px; }
-  .organizers { grid-template-columns: 1fr; }
+  .abstract-layout { grid-template-columns: 1fr; gap: 25px; }
+  .intro-heading { position: static; }
+  .abstract-copy p { margin-bottom: 22px; }
+  .organizers { grid-template-columns: 1fr; gap: 16px; margin-bottom: 48px; padding-bottom: 30px; }
+  .organizers .section-label { margin: 0 0 4px; }
   .section-heading { display: block; }
   .section-heading > p { margin-top: 18px; }
   .session { margin-bottom: 55px; }
